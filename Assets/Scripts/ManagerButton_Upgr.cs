@@ -77,6 +77,7 @@ public class ManagerButton_Upgr : MonoBehaviour,ISaveable
     public void DefaultManagerButtonUpgr()
     {
         isShown = false;
+        isDone = false;
     }
     public object CaptureState()
     {
