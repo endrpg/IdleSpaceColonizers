@@ -22,7 +22,7 @@ public class LaunchButton : MonoBehaviour
             me.interactable = true;
             me.GetComponent<Image>().sprite = Image1;
             me.onClick.RemoveAllListeners();
-            me.onClick.AddListener(delegate{LaunchManager.Instance.Launching();ClickManager.Instance.PurchaseValue(requirement);});
+            me.onClick.AddListener(delegate{LaunchManager.Instance.Launching();ClickManager.Instance.PurchaseValue(requirement);StartCoroutine(LaunchInstantiated()); });
         }
     }
     IEnumerator LaunchInstantiated()

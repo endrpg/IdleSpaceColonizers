@@ -39,6 +39,7 @@ public class LaunchManager : MonoBehaviour
     public GameObject unshow16;
     public GameObject unshow17;
     public GameObject unshow18;
+    public GameObject unshow19;
 
 
 // Buttons
@@ -152,6 +153,7 @@ public class LaunchManager : MonoBehaviour
         unshow16.SetActive(false);
         unshow17.SetActive(false);
         unshow18.SetActive(false);
+        unshow19.SetActive(false);
         Debug.Log("all Intit");
     }
 }
