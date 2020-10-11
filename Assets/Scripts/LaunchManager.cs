@@ -83,11 +83,11 @@ public class LaunchManager : MonoBehaviour
     {
         audioSource.PlayOneShot(countdown,0.7f);
         StartCoroutine(LaunchSound());
-        anim.SetTrigger("Launch");
     }
     IEnumerator LaunchSound()
     {
-        yield return new WaitForSeconds(11f);
+        yield return new WaitForSeconds(10f);
+        anim.SetTrigger("Launch");
         unshow1.SetActive(false);
         unshow2.SetActive(false);
         unshow3.SetActive(false);

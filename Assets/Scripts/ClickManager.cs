@@ -72,11 +72,7 @@ public class ClickManager : MonoBehaviour,ISaveable
     void CoinMaker()
     {
         CoinPlayer coinPlayer = GetComponentInParent<CoinPlayer>();
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            coinPlayer.InstantiateAndDestroy(touch.position);
-        }
+        coinPlayer.InstantiateAndDestroy(Input.mousePosition);
     }
     // for purchasing
     public void PurchaseValue(float value)

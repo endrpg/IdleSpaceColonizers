@@ -20,7 +20,6 @@ public class CoinPlayer : MonoBehaviour
     {
         var Coin = (GameObject)Instantiate(coin,positionCoin,Quaternion.identity);
         Coin.transform.SetParent(gameObject.transform,false);
-        Coin.transform.position = Vector2.MoveTowards(transform.position,new Vector2(transform.position.x,transform.position.y + 4),3*Time.deltaTime);
         Destroy(Coin,2f);
     }
 }
