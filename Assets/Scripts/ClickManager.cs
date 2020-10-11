@@ -28,6 +28,8 @@ public class ClickManager : MonoBehaviour,ISaveable
     TextMeshProUGUI fundingValue;
     public TextMeshProUGUI gemsText;
     public TextMeshProUGUI inactiveFundingText;
+    public AudioClip clickSound;
+    AudioSource audioSOurce;
     public int gems = 25;
     void Awake() 
     {
@@ -38,6 +40,7 @@ public class ClickManager : MonoBehaviour,ISaveable
         myButton = GetComponent<Button>();
         fundingValue = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         textHandler = GameObject.Find("Text Handler").GetComponent<TextHandler>();
+        audioSOurce = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -73,6 +76,7 @@ public class ClickManager : MonoBehaviour,ISaveable
     {
         CoinPlayer coinPlayer = GetComponentInParent<CoinPlayer>();
         coinPlayer.InstantiateAndDestroy(Input.mousePosition);
+        audioSOurce.PlayOneShot(clickSound,0.04f);
     }
     // for purchasing
     public void PurchaseValue(float value)
