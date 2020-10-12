@@ -75,8 +75,12 @@ public class ClickManager : MonoBehaviour,ISaveable
     void CoinMaker()
     {
         CoinPlayer coinPlayer = GetComponentInParent<CoinPlayer>();
-        coinPlayer.InstantiateAndDestroy(Input.mousePosition);
-        audioSOurce.PlayOneShot(clickSound,0.04f);
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            coinPlayer.InstantiateAndDestroy(touch.position);
+            audioSOurce.PlayOneShot(clickSound,0.04f);
+        }
     }
     // for purchasing
     public void PurchaseValue(float value)
