@@ -19,7 +19,6 @@ public class CoinPlayer : MonoBehaviour
     public void InstantiateAndDestroy(Vector2 positionCoin)
     {
         var Coin = (GameObject)Instantiate(coin,positionCoin,Quaternion.identity);
-        Coin.transform.SetParent(gameObject.transform,false);
         Destroy(Coin,2f);
     }
 }

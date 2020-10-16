@@ -198,6 +198,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178051789}
   m_CullTransparentMesh: 0
+--- !u!1 &229566712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229566714}
+  - component: {fileID: 229566713}
+  m_Layer: 0
+  m_Name: Skip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &229566713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229566712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c73c90ca6d5354faa86275a5f245d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &229566714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229566712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.60493016, y: 1.217092, z: 27.169239}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &557867528
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +476,137 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685654436}
   m_CullTransparentMesh: 0
+--- !u!1 &829454858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829454859}
+  - component: {fileID: 829454862}
+  - component: {fileID: 829454861}
+  - component: {fileID: 829454860}
+  m_Layer: 5
+  m_Name: Skip Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &829454859
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829454858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 950568349}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.07714685, y: 0.09665937}
+  m_AnchorMax: {x: 0.186, y: 0.22255379}
+  m_AnchoredPosition: {x: 0, y: 1.552063}
+  m_SizeDelta: {x: -4.842499, y: 3.1041718}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &829454860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829454858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 829454861}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 229566713}
+        m_TargetAssemblyTypeName: Quitmanager, Assembly-CSharp
+        m_MethodName: Skip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &829454861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829454858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ccddfb42fce41904aad4d7280ae476ad, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &829454862
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829454858}
+  m_CullTransparentMesh: 0
 --- !u!1 &950568348
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +638,7 @@ RectTransform:
   m_Children:
   - {fileID: 1618190271}
   - {fileID: 1340893618}
+  - {fileID: 829454859}
   m_Father: {fileID: 557867532}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -556,35 +731,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1618190272}
   sentences:
-  - Hi, My name is Max. I am your temporary assistant. Just to give you some brief
-    instructions on how to run this company. I don't know what to hope but yes for
-    god sake I hope you will be doing good.
-  - This is just a dummy of the management software you will be using so none of
-    things are interactable. You didn't have a budget to make a dummy managerial
-    software. So work out with this thing and not even to hire a personal assistant.
-  - Psst. Forget about it. Okay so this screen over here is something you will be
-    greeted with, Upper panel is your site and the panel below it is a DEP - Design
-    and execution panel
-  - You can earn money by tapping on the top panel and then use that money to hire
-    employees who can be upgraded to max levels. Each Employee you upgrade will give
-    you click bonus
-  - And on the top you may see three things first the gems text then the Funding
-    text and lastly a cross
-  - There is not much to talk about funding text and gems but yes passive funding
-    is something which will be generated by managers.
-  - If you click on the cross you will see a overlay menu appears where you can go
-    to different DEPs. You may see two  peculiar buttons Launch and Parts.
-  - After you buy all the parts you can then only launch the spacecraft. To launch
-    the spacecraft you need a trillion yes launching is not easy takes money. If
-    you can launch the spacecraft the launch text turns red indicating that you can
-    launch the spacecraft
-  - After you launch you will return back to square one but investors have realised
-    that you are capable of doing something so they have given you a profit bonus
-    for your next company everything is doubled.
-  - You can also buy yourself gems from special panel and go to upgrade panel to
-    buy profit bonuses from gems.
-  - The engineers are still working on DEPs to give you more freedom on what you
-    can do. Until then work with this cute panel.
+  - 'Hi, my name is Max.  I am your temporary assistant.  I am here to give you a
+    briefing on how to run this company.  I don''t know what to expect, but for the
+    sake of the world: I hope you do well.
+
+'
+  - This is just a replica of the management software that you will be using, so
+    none of the buttons are interactable.  You didn't have a budget to make dummy
+    managerial software, so work with this menu and not even hire a personal assistant.
+  - 'Psst.  Forget about it.  This screen is similar to what you will be greeted
+    with: upper panel is your worksite and the panel below it is the DEP - Design
+    and Execution Panel.
+
+'
+  - You can earn money by tapping on the top panel and then use the money to hire
+    employees who can be upgraded to max levels.  Each employee upgraded will give
+    an additional click bonus
+  - 'On the top you may see three items: first the Gems text, the Funding text, and
+    then lastly a cross button to open the Menu Overlay.
+
+'
+  - Gems is your ultimate currency, and your Funding will help you buy employees
+    and rocket parts!  Passive funding is big money and will be generated by managers
+    per second!
+  - 'If you click on the cross you will see an overlay menu appear, where you can
+    go to different DEPs.  You may see two peculiar buttons: Parts and Launch.'
+  - After you buy all the required parts, only then can you launch the spacecraft. 
+    To launch the spacecraft, you need a trillion dollars. Yes, launching a rocket
+    is not cheap, it takes money!  If you complete the prerequisites to launch the
+    spacecraft, the launch button turns red indicating that you can blast off!
+  - 'After launching, you will return back to square one - but investors have realized
+    that you have a great potential - so they have given you additional profit bonuses
+    for your next company: everything is doubled.
+
+'
+  - If you decide, you can also purchase gems to be spent in the special DEP.  This
+    DEP will directly support The End RPG Company in creating additional content
+    and modules for our games.
+  - The engineers are still working on DEPs to give you more freedom, choices, and
+    planets to visit!  Until then, work with this cute panel.
   - 25 gems for you to start out....
   images:
   - {fileID: 21300000, guid: 56a0ae76ee745ba4ba37d6be54965604, type: 3}
@@ -715,7 +900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1340893616
 MonoBehaviour:
   m_ObjectHideFlags: 0
