@@ -7,6 +7,7 @@ public class LaunchButton : MonoBehaviour
     public float requirement = 10f;
     private Button me;
     public Sprite Image1;
+    public Sprite Image2;
     bool launchDone = false;
     public GameObject checking;
     void Start()
